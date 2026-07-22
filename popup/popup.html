@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Configurable Data Extractor</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Data Extractor</h1>
+
+    <div class="add-field-section">
+      <input type="text" id="fieldName" placeholder="Field name (e.g. Title)" />
+      <input type="text" id="fieldSelector" placeholder="CSS selector (e.g. .price_color)" />
+      <button id="addFieldBtn">Add Field</button>
+    </div>
+
+    <ul id="fieldList" class="field-list">
+      <!-- Added fields will appear here dynamically -->
+    </ul>
+
+    <div class="actions">
+      <button id="extractBtn">Extract Data</button>
+      <button id="exportBtn">Export CSV</button>
+    </div>
+
+    <div id="status" class="status"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
