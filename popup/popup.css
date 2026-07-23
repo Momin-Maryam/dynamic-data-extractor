@@ -23,7 +23,8 @@ h1 {
   margin-bottom: 10px;
 }
 
-.add-field-section input {
+.add-field-section input,
+.add-field-section select {
   padding: 6px;
   font-size: 13px;
   border: 1px solid #ccc;
@@ -38,6 +39,11 @@ h1 {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+#pickElementBtn {
+  background: #f4b400;
+  color: #222;
 }
 
 .field-list {
@@ -57,6 +63,32 @@ h1 {
   border-radius: 4px;
   margin-bottom: 4px;
   font-size: 12px;
+}
+
+.pagination-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #ddd;
+}
+
+.pagination-section input {
+  padding: 6px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#scrapeBtn {
+  padding: 6px;
+  font-size: 13px;
+  background: #9c27b0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .actions {
